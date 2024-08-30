@@ -1,0 +1,78 @@
+.h2 {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    left: 40%;
+}
+.button1 {
+    position: absolute;
+    bottom: 50%;
+    width: 95px;
+    height: 50px;
+    left: 50%;
+}
+.button2 {
+    position: absolute;
+    bottom: 40%;
+    width: 95px;
+    height: 50px;
+    left: 50%;
+}
+body {
+    background-image: url("jarvis.jpg");
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center,center;
+    background-attachment: fixed;
+}
+h1 {
+    font-family: 'Courier New', monospace;
+    font-size: 50px;
+}
+/* From Uiverse.io by Navarog21 */ 
+button {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #212121;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #212121;
+    transition: 0.5s;
+  }
+  
+  button:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  button:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
